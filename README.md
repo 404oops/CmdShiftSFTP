@@ -2,6 +2,8 @@
 
 A slim(mable) Python-based SFTP image uploader designed for macOS versions which have Command+Shift+3-5 Screenshot and Screen record shortcuts
 
+![](https://soa.404oops.com/?user=404oops)
+
 ## To set up
 
 Clone this repository, open main.py and change the connection, destination and parameters to your wish. Everything is commented to your ease. Then run
