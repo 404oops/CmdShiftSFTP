@@ -7,7 +7,6 @@ import random
 def copycb(output):
     process = subprocess.Popen('pbcopy', env={'LANG': 'en_US.UTF-8'}, stdin=subprocess.PIPE)
     process.communicate(output.encode('utf-8'))
-paramiko.util.log_to_file("paramiko.log")
 transport = paramiko.Transport(("Host", 22)) # Change the host (and port if necessary)
 transport.connect(None, 'username', "password") # you can add a private key by replacing the password with pkey=paramiko.RSAKey.from_private_key_file("/path/to/id_rsa")
 sftp = paramiko.SFTPClient.from_transport(transport)
